@@ -155,13 +155,17 @@ export class Plugin extends PluginBase<PluginTypes> {
     }
     this.itemViews.add(itemView);
 
+    /*
+    Disable 'refresh view' button in tab bar
+    */
+    /*
     const buttonEl = itemView.addAction('refresh-cw', 'Refresh view', () => {
       invokeAsyncSafely(() => this.refreshView(itemView));
     });
-
+    
     this.register(() => {
       buttonEl.remove();
-    });
+    });*/
   }
 
   private handleModify(file: TAbstractFile): void {
